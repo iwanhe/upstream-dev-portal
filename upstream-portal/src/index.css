@@ -1,0 +1,90 @@
+/* =============================================
+   UPSTREAM DEV PORTAL — Global Styles
+   PANDAWA · KCSI · Nojorono Group
+   ============================================= */
+
+:root {
+  --bg0: #06080d;
+  --bg1: #0a0e17;
+  --bg2: #0f1520;
+  --bg3: #141b28;
+  --bg4: #1a2233;
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-hover: rgba(255, 255, 255, 0.07);
+  --cyan: #00e5ff;
+  --cyan2: #00b8d9;
+  --amber: #ffb300;
+  --amber2: #ff8f00;
+  --green: #00e676;
+  --violet: #7c4dff;
+  --red: #ff5252;
+  --txt: #e8eaf6;
+  --txt2: #8892b0;
+  --txt3: #4a5568;
+  --mono: "IBM Plex Mono", monospace;
+  --sans: "Outfit", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg0);
+  color: var(--txt);
+  font-family: var(--sans);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg4);
+  border-radius: 2px;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
+}
+
+/* FadeUp animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
